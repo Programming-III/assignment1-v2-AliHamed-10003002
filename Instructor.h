@@ -12,8 +12,17 @@ instructor(string dep, int expyears){
 department = dep;
 experienceYears = expyears;
 }
+
+instructor(){
+department = "";
+experienceYears = 0;
+}
+
+~instructor(){}
+  
 void display(){
 cout<<"Instructor's department: "<<department<<" Instructor years of experience: "<<experienceYears<<endl;
+}
 }
 
 
