@@ -20,24 +20,15 @@ name = "";
 id = -1;
 }
 
-string getDept(){
-  return department;
-}
-int getExpYears(){
-  return experienceYears;
-}
-
+string getDept();
+int getExpYears();
 
 ~instructor(){}
   
-void display(){
-  Person.display();
-cout<<"Instructor's department: "<<getDept()<<" Instructor years of experience: "<<getExpYears()<<endl;
+void display();
+
+
 }
-}
-
-
-
 
 
 
