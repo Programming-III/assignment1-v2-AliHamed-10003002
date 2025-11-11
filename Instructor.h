@@ -3,7 +3,19 @@
 
 #include "Person.h"
 using namespace std;
-//#write Instructor class here
+class instructor{
+private:
+string department;
+int experienceYears;
+public:
+instructor(string dep, int expyears){
+department = dep;
+experienceYears = expyears;
+}
+void display(){
+cout<<"Instructor's department: "<<department<<" Instructor years of experience: "<<experienceYears<<endl;
+}
+
 
 
 
