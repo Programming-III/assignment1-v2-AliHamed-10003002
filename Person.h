@@ -14,7 +14,7 @@ Person(string name, int id){
     this->id = id;
 }
 
-void display(){
+virtual void display(){
     cout<<"Student name: "<<name<<"Student ID: "<<endl;
 }
 
