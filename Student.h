@@ -20,8 +20,21 @@ Student(){
 }
 ~Student(){}
 
+int getYearLevel(){
+  return yearLevel;
+}
+string getMajor(){
+  return major;
+}
+void setMajor(string m){
+  major = m;
+}
+void setYearLevel(int yl){
+  yearLevel = yl;
+}
+
 void display(){
-  cout<<"Student year lavel: "<<yearLevel<<"Student major: " <<major<<endl;
+  cout<<"Student year lavel: "<<getYearLevel()<<"Student major: " <<getMajor()<<endl;
 }
 }
 
