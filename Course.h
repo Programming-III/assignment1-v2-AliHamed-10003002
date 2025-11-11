@@ -20,15 +20,25 @@ this-> maxStudents = maxStudents;
 this-> students = students;
 this-> currentStudents = currentStudents;
 }
+course(){
+  coursecode = "";
+  courseName = "";
+  maxStudents = 0;
+  currentStudents = 0;
+}
+
+~course() {}
 
 void addStudent(const Student &s){
-students+= &s;
+students += &s;
 }
 
-void displayCourseInfo(){
-cout<<"Course name: <<courseName<<endl<<" Course code: "<<coursecode<<endl<<" Maximum students: "<<maxStudents<<endl<<
-"Current number of enrolled students: "<<currentstudents<<endl<<" Student's info: "<<students->display
+ void displayCourseInfo(){
+  cout<<"Course name: <<courseName<<endl<<" Course code: "<<coursecode<<endl<<" Maximum students: "<<maxStudents<<endl<<
+  "Current number of enrolled students: "<<currentstudents<<endl<<" Student's info: "<<students->display()<<endl;
 }
+}
+
 
 
 
