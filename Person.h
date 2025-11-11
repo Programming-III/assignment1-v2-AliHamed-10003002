@@ -1,6 +1,5 @@
 #ifndef PERSON_H
 #define PERSON_H
-#include <iostream>
 #include <string>
 using namespace std;
 
@@ -13,9 +12,23 @@ Person(string name, int id){
     this->name = name;
     this->id = id;
 }
+void setName(String n){
+name = n;
+}
+void setID(int x){
+    id = x;
+}
+
+string getName(){
+    return name;
+}
+
+int getID(){
+return id;
+}
 
 virtual void display(){
-    cout<<"Student name: "<<name<<"Student ID: "<<endl;
+    cout<<"Student name: "<<getName()<<"Student ID: "<<getID()<<endl;
 }
 
 
