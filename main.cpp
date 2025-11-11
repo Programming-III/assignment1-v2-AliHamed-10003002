@@ -176,7 +176,7 @@ students += &s;
 
 // ==================== Main Function ====================
 int main() {
-   Person s1 = new Student(5, )
+   Person s1 = new Student(5,"aa",""ddd",58 );
     
     return 0;
 }
