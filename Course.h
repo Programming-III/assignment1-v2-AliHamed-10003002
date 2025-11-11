@@ -29,14 +29,9 @@ course(){
 
 ~course() {}
 
-void addStudent(const Student &s){
-students += &s;
-}
+void addStudent();
 
- void displayCourseInfo(){
-  cout<<"Course name: <<courseName<<endl<<" Course code: "<<coursecode<<endl<<" Maximum students: "<<maxStudents<<endl<<
-  "Current number of enrolled students: "<<currentstudents<<endl<<" Student's info: "<<students->display()<<endl;
-}
+ void displayCourseInfo();
 }
 
 
