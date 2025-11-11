@@ -4,15 +4,21 @@
 #include "Person.h"
 #include <string>
 #using namespace std;
-class Student{
+class Student : public person{
 private:
 int yearLevel;
 string major;
 public:
-Student(int yearLevel, string major){
+Student(int yearLevel, string major, string name, int id) : Person(name,id) {
 this-> yearLevel = yearLevel;
 this-> major = major; 
 }
+
+Student(){
+  yearLevel = -1;
+  major = "";
+}
+~Student(){}
 
 void display(){
   cout<<"Student year lavel: "<<yearLevel<<"Student major: " <<major<<endl;
