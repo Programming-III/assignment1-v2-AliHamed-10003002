@@ -12,25 +12,13 @@ Person(string name, int id){
     this->name = name;
     this->id = id;
 }
-void setName(String n){
-name = n;
-}
-void setID(int x){
-    id = x;
-}
+void setName(String n);
+void setID(int x);
+string getName();
 
-string getName(){
-    return name;
-}
+int getID();
 
-int getID(){
-return id;
-}
-
-virtual void display(){
-    cout<<"Student name: "<<getName()<<"Student ID: "<<getID()<<endl;
-}
-
+virtual void display();
 
 
 
