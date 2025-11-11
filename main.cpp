@@ -42,6 +42,39 @@ virtual void display(){
 
 
 // ==================== Student Class Implementation ====================
+class Student : public person{
+private:
+int yearLevel;
+string major;
+public:
+Student(int yearLevel, string major, string name, int id) : Person(name,id) {
+this-> yearLevel = yearLevel;
+this-> major = major; 
+}
+
+Student(){
+  yearLevel = -1;
+  major = "";
+}
+~Student(){}
+
+int getYearLevel(){
+  return yearLevel;
+}
+string getMajor(){
+  return major;
+}
+void setMajor(string m){
+  major = m;
+}
+void setYearLevel(int yl){
+  yearLevel = yl;
+}
+
+void display(){
+  cout<<"Student year lavel: "<<getYearLevel()<<"Student major: " <<getMajor()<<endl;
+}
+}
 
 
 
@@ -111,14 +144,27 @@ course(){
 }
 
 ~course() {}
+string getCourseCode(){
+    return coursecode;
+}
+string getCname(){
+    return courseName;
+}
+int getMaxStudents(){
+    return maxStudents;
+}
+
+void getCurrentstudents(){
+    return currentStudents;
+
 
 void addStudent(const Student &s){
 students += &s;
 }
 
  void displayCourseInfo(){
-  cout<<"Course name: <<courseName<<endl<<" Course code: "<<coursecode<<endl<<" Maximum students: "<<maxStudents<<endl<<
-  "Current number of enrolled students: "<<currentstudents<<endl<<" Student's info: "<<students->display()<<endl;
+  cout<<"Course name: <<getCname()<<endl<<" Course code: "<<getCourseCode()<<endl<<" Maximum students: "<<getMaxStudents()<<endl<<
+  "Current number of enrolled students: "<<getCurrentstudents()<<endl<<" Student's info: "<<students->display()<<endl;
 }
 }
 
@@ -130,7 +176,7 @@ students += &s;
 
 // ==================== Main Function ====================
 int main() {
-   
+   Person s1 = new Student(5, )
     
     return 0;
 }
